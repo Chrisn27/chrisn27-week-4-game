@@ -17,31 +17,26 @@
 
 	<!-- super awesome lorem instructions -->
 	<div id="instructions">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in facere optio aperiam, veritatis totam explicabo nostrum consequatur, similique distinctio sed odit quisquam qui! Ab modi, sunt labore possimus ratione?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in facere optio aperiam, veritatis totam explicabo nostrum consequatur, similique distinctio sed odit quisquam qui! Ab modi, sunt labore possimus ratione?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in facere optio aperiam, veritatis totam explicabo nostrum consequatur, similique distinctio sed odit quisquam qui! Ab modi, sunt labore possimus ratione?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in facere optio aperiam, veritatis totam explicabo nostrum consequatur, similique distinctio sed odit quisquam qui! Ab modi, sunt labore possimus ratione?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in facere optio aperiam, veritatis totam explicabo nostrum consequatur, similique distinctio sed odit quisquam qui! Ab modi, sunt labore possimus ratione?</p>
+		<p>You will be given a random number at the start of the game</p>
+		<p>There are four puppies below.  By clicking on a puppy you will add a specific ammount of points to your total score</p>
+		<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</p>
+		<p>The value of each puppy is hidden from you until you click on it</p>
+		<p>The target score and value of the puppies with change each time the game starts</p>
 	</div>
 
 	<!-- game score and wins/losses -->
 	<div id="game_1">
-		<div id="target_score">69</div>
-		<div id="stats">0</div>
+		<div id="board">Target Score:</div>
+		<div id="target_score"></div>
+		<div id="stats"><p id="wins"><p id="losses"></div>
 	</div>
 	
 	<!-- crystals will be created here -->
-	<div id="crystals">
-		<ul>
-			<li><div id="c0"><img src="assets/images/pup1.jpg"></div></li>
-			<li><div id="c1"><img src="assets/images/pup2.jpg"></div></li>
-			<li><div id="c2"><img src="assets/images/pup3.jpg"></div></li>
-			<li><div id="c3"><img src="assets/images/pup4.jpg"></div></li>
-		</ul>
+	<div id="puppies">
 	</div>
 	
 	<!-- tracking player's current score -->
-	<div id="board">
+	<div id="player">
 		<div id="total">Your total score is:</div>
 		<div id="current_score"></div>
 	</div>

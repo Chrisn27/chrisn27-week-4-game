@@ -1,7 +1,40 @@
-#crystals li {
-	display: inline-block;
+body {
+	font-family: sans-serif, arial, times;
+	width: 100%;
+	max-width: 1000px;
+	font-size: 18px
+	line-height: 27px;
+	color: black;
 }
 
-#crystals img {
-	width: 80px;
+#container {
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+#instructions {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+#puppies img {
+	width: 200px;
+}
+
+#game_1 {
+	background-color: green;
+	width: 30%;
+}
+
+#player {
+	width: 30%;
+	background-color: blue;
+}
+
+#puppies img:hover {
+	opacity: 0.7;
 }
