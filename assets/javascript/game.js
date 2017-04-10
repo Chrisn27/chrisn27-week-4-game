@@ -3,9 +3,9 @@ $(document).ready(function() {
 	var score = 0;
 	var wins = 0;
 	var losses = 0;
-	var hungry = ["I", "am", "getting", "hungry"]
 	var target = [];
-
+	var pups = ["assets/images/pup1.jpg", "assets/images/pup2.jpg", "assets/images/pup3.jpg", "assets/images/pup4.jpg"]
+	
 	// calls start function on load
 	window.onload = function() {
 		start();
@@ -17,6 +17,7 @@ $(document).ready(function() {
 		target = [];
 		$("#puppies").empty();
 		$("#current_score").empty();
+		$("#current_score").html("Your total score is: 0");
 		start();
 	}
 
@@ -24,17 +25,18 @@ $(document).ready(function() {
 function start() {
 
 		// selects a number between? 19-120
-		var random = Math.floor(Math.random() * ( 120 - 19)) + 19;
+		var random = Math.floor(Math.random() * ( 121 - 19)) + 19;
 		target.push(random);
-		$("#target_score").html(target[0]);
+		$("#target_score").html("Target Score: " + target[0]);
+		$("#target_score").css("font-weight", "bold");
 		$("#wins").html("Wins: " + wins)
 		$("#losses").html(" Losses: " + losses)
 
-		console.log(target);
-		//var c_value = Math.floor(Math.random() * ( 12 - 1)) + 1;
+		// console.log(target);
 
 	// creates 4 images of the same dang puppy and prints 4 different values for the puppys
-	for (var i = 0; i < hungry.length; i++) {
+ 
+		for (var i = 0; i < pups.length; i++) {
 
 		var pupImage = $("<img>");
 
@@ -42,7 +44,7 @@ function start() {
 
 		var c_value = Math.floor(Math.random() * ( 12 - 1)) + 1;
 
-		pupImage.attr("src", "assets/images/pup2.jpg");
+		pupImage.attr("src", pups[i]);
 
 		pupImage.attr("puppy_value", c_value);
 
@@ -56,7 +58,7 @@ function start() {
 		var puppyValue = ($(this).attr("puppy_value"));
 	    puppyValue = parseInt(puppyValue);
 	    score += puppyValue;
-	    $("#current_score").html(score);
+	    $("#current_score").html("Your total score is: " + score);
 	    
 	    // win condition
 	    if (score === target[0]) {
