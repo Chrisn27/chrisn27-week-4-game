@@ -44,6 +44,11 @@ h1 {
 
 #puppies img:hover {
 	opacity: 0.1;
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat976.gif), progress !important;
+}
+
+#puppies img:active {
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif), progress !important;
 }
 
 #wins {
@@ -59,3 +64,4 @@ h1 {
 	line-height: 42px;
 	text-align: center;
 }
+
